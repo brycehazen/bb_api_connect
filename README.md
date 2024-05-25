@@ -46,7 +46,7 @@ pip install requests bottle
        },
        "tokens": {
            "access_token": "From http://localhost:13631/ after running bb_auth.py and login to blackbaud, will print to console - VERY LONG",
-           "refresh_token": response from localhost:13631 - Much shorter"
+           "refresh_token": "response from localhost:13631 - Much shorter"
        },
        "other": {
            "api_subscription_key": "Primary access key found under Developer account",
