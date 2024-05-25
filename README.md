@@ -69,8 +69,8 @@ To obtain access and refresh tokens, run the authentication server:
 python bb_auth.py
 ```
 
-1. Open your browser and navigate to the URL provided by the server.
-2. Authorize the application and capture the authorization code.
+1. Open your browser and navigate to `http://localhost:13631/`
+2. Authorize the application by clicking the link and choosing your environment.
 3. The server will handle the token exchange and update the `app_secrets_template.json` and `app_secrets_template.ini` files with the obtained tokens.
 
 ### Making API Requests
@@ -93,8 +93,5 @@ print(response.json())
 ### Notes
 
 - The `bb_api_connect` class currently has the `update_access_token` method commented out to prevent automatic token updates. Uncomment and use it if you need to refresh tokens programmatically.
-- The `bb_auth.py` script handles the initial OAuth2 flow and should be run whenever you need to refresh or obtain new tokens.
+- The `bb_auth.py` script handles the initial OAuth2 flow and should be run whenever you need to refresh or obtain new tokens or switch for example between Raiser's Edge NXT and Merchant Services or change environments
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
