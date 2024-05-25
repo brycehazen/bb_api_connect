@@ -9,6 +9,7 @@ This project provides a simple connector to the Blackbaud SKY API, including aut
 - `bb_auth.py`: Facilitates the OAuth2 authentication flow to obtain access and refresh tokens.
 - `app_secrets_template.json`: Template for storing application secrets and tokens.
 - `app_secrets_template.ini`: Alternative configuration file for storing tokens (updated after authentication).
+- Any other .py that has your endpoint, put in the same directory as the files above. 
 
 ## Setup
 
